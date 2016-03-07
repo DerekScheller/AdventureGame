@@ -9,7 +9,7 @@ public class Character {
 	int jortsPant = 10;
 	int khakisPant = 13;
 	int naked = 5;
-	void selectCharacter() {
+	int selectCharacter() {
 		Scanner scanner = new Scanner (System.in);	
 		System.out.println("You look like a bright fellow, would you like to play my game?");
 		System.out.println("Why don't you tell me what, is your name?");
@@ -51,9 +51,9 @@ public class Character {
 					choiceTwo = naked;
 					break;
 			}
-			int outfit = choiceOne + choiceTwo;
+		int outfit = choiceOne + choiceTwo;
 		System.out.println("You look great in your " + topGarment + " and " +  trouser );
-		System.out.print(outfit);
+		return outfit;
 	}
 
 }  

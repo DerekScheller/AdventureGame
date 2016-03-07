@@ -9,7 +9,7 @@ public class Weapon {
 	int bullWhip = 5;
 	int roadSign = 3;
 	int fists = 1;
-	void selectWeapon() {
+	int selectWeapon() {
 		Scanner scanner = new Scanner (System.in);
 		System.out.println("Looks like you have two hands how bout you hold something in them before the fight.");
 		List<String> validLeftHand = Arrays.asList("Cool Knife","Long Sword","Wood Sword");
@@ -49,8 +49,8 @@ public class Weapon {
 					rightHand = fists;
 					break;
 			}
-			int totalAttack = leftHand + rightHand;
-		System.out.print(totalAttack);
+		int totalAttack = leftHand + rightHand;
+		return totalAttack;
 	}
 
 }  
